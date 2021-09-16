@@ -11,6 +11,7 @@ import { Transaction } from './transactions/entities/transaction.entity';
 
 import { AccountsModule } from './accounts/accounts.module';
 import { SharedModule } from './shared/shared.module';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -32,6 +33,7 @@ import { SharedModule } from './shared/shared.module';
     TransactionsModule,
     AccountsModule,
     SharedModule,
+    AuthModule,
   ],
   controllers: [AppController],
   providers: [AppService],

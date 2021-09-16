@@ -8,7 +8,6 @@ import {
   BelongsTo,
 } from 'sequelize-typescript';
 import { ToNumber } from '../../shared/decorators/to-number.decorators';
-
 import { Account } from './../../accounts/entities/account.entity';
 
 export enum TransactionCategory {
