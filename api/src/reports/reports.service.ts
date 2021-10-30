@@ -1,9 +1,11 @@
-import { TenantService } from './../tenant/tenant/tenant.service';
 import { InjectModel } from '@nestjs/sequelize';
+import { Injectable } from '@nestjs/common';
+
+import { CreateReportDto } from './dto/create-report.dto';
 import { UpdateReportDto } from './dto/update-report.dto';
 import { Report } from './entities/report.entity';
-import { Injectable } from '@nestjs/common';
-import { CreateReportDto } from './dto/create-report.dto';
+
+import { TenantService } from '../tenant/tenant/tenant.service';
 
 @Injectable()
 export class ReportsService {

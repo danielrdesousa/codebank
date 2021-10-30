@@ -8,8 +8,8 @@ import { SequelizeModule } from '@nestjs/sequelize';
 
 import { TransactionsModule } from './transactions/transactions.module';
 import { Transaction } from './transactions/entities/transaction.entity';
-
 import { AccountsModule } from './accounts/accounts.module';
+import { ReportsModule } from './reports/reports.module';
 import { SharedModule } from './shared/shared.module';
 import { AuthModule } from './auth/auth.module';
 
@@ -32,6 +32,7 @@ import { AuthModule } from './auth/auth.module';
     }),
     TransactionsModule,
     AccountsModule,
+    ReportsModule,
     SharedModule,
     AuthModule,
   ],

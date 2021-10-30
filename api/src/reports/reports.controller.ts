@@ -1,6 +1,8 @@
+import { Controller, Get, Post, Body, UseGuards } from '@nestjs/common';
+
 import { TenantGuard } from './../tenant/tenant.guard';
 import { JwtAuthGuard } from './../auth/jwt-auth.guard';
-import { Controller, Get, Post, Body, UseGuards } from '@nestjs/common';
+
 import { ReportsService } from './reports.service';
 import { CreateReportDto } from './dto/create-report.dto';
 
